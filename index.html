@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>SWEET POWER GYM</title>
+
     <style>
         body {
             background-color: black;
@@ -48,7 +49,7 @@
         .image-row {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
             margin: 20px 0;
         }
 
@@ -62,14 +63,13 @@
             opacity: 0.9;
         }
 
-        /* First row: 3 images */
+        /* Smaller images */
         .row-3 img {
-            width: 30%;
+            width: 25%;
         }
 
-        /* Second row: 2 images */
         .row-2 img {
-            width: 45%;
+            width: 38%;
         }
 
         .content {
@@ -83,14 +83,10 @@
             margin-top: 30px;
         }
 
-        .content p {
-            font-size: 17px;
-            line-height: 1.6;
-        }
-
+        .content p,
         .content ul {
             font-size: 17px;
-            line-height: 1.8;
+            line-height: 1.6;
         }
 
         footer {
@@ -102,17 +98,32 @@
         }
 
         @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(-20px);}
-            to {opacity: 1; transform: translateY(0);}
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
+        /* Tablet */
         @media screen and (max-width: 768px) {
-            .row-3 img { width: 45%; }
-            .row-2 img { width: 90%; }
+            .row-3 img {
+                width: 40%;
+            }
+            .row-2 img {
+                width: 80%;
+            }
         }
 
+        /* Mobile */
         @media screen and (max-width: 480px) {
-            .menu a { display: block; margin: 10px 0; }
+            .menu a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -124,15 +135,15 @@
 
     <!-- First row: 3 images -->
     <div class="image-row row-3">
-        <img src="image1.png" alt="Power Gym">
-        <img src="image2.png" alt="Power Gym">
-        <img src="image3.png" alt="Power Gym">
+        <img src="image1.png" alt="Gym Image">
+        <img src="image2.png" alt="Gym Image">
+        <img src="image3.png" alt="Gym Image">
     </div>
 
     <!-- Second row: 2 images -->
     <div class="image-row row-2">
-        <img src="image4.png" alt="Power Gym">
-        <img src="image5.png" alt="Power Gym">
+        <img src="image4.png" alt="Gym Image">
+        <img src="image5.png" alt="Gym Image">
     </div>
 
     <!-- Menu -->
@@ -147,14 +158,9 @@
 
         <h2>About Our Gym</h2>
         <p>
-            Power Gym is a modern fitness center focused on strength,
+            Sweet Power Gym is a modern fitness center focused on strength,
             discipline, and healthy living. We provide a comfortable
             environment where everyone can train confidently.
-        </p>
-        <p>
-            Our goal is to inspire consistency and positive habits,
-            helping members stay motivated and achieve long-term
-            fitness results.
         </p>
 
         <h2>Our Programs</h2>
@@ -179,3 +185,4 @@
 
 </body>
 </html>
+
