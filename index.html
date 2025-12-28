@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SWEET POWER GYM</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 46px;
+            margin-top: 20px;
+            animation: fadeIn 2s;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-size: 18px;
+            animation: fadeIn 2.5s;
+        }
+
+        .menu {
+            background-color: #8b0000;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .menu a:hover {
+            color: gold;
+            transform: scale(1.1);
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .image-row img {
+            border-radius: 10px;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+
+        .image-row img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* First row: 3 images */
+        .row-3 img {
+            width: 30%;
+        }
+
+        /* Second row: 2 images */
+        .row-2 img {
+            width: 45%;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+
+        .content p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .content ul {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #8b0000;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @media screen and (max-width: 768px) {
+            .row-3 img { width: 45%; }
+            .row-2 img { width: 90%; }
+        }
+
+        @media screen and (max-width: 480px) {
+            .menu a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>SWEET POWER GYM</h1>
+    <p class="subtitle">BUILD YOUR BODY, BUILD YOUR LIFE</p>
+
+    <!-- First row: 3 images -->
+    <div class="image-row row-3">
+        <img src="image1.png" alt="Power Gym">
+        <img src="image2.png" alt="Power Gym">
+        <img src="image3.png" alt="Power Gym">
+    </div>
+
+    <!-- Second row: 2 images -->
+    <div class="image-row row-2">
+        <img src="image4.png" alt="Power Gym">
+        <img src="image5.png" alt="Power Gym">
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Programs</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+
+        <h2>About Our Gym</h2>
+        <p>
+            Power Gym is a modern fitness center focused on strength,
+            discipline, and healthy living. We provide a comfortable
+            environment where everyone can train confidently.
+        </p>
+        <p>
+            Our goal is to inspire consistency and positive habits,
+            helping members stay motivated and achieve long-term
+            fitness results.
+        </p>
+
+        <h2>Our Programs</h2>
+        <ul>
+            <li>Weight Training</li>
+            <li>Cardio Training</li>
+            <li>CrossFit</li>
+            <li>Yoga & Flexibility</li>
+        </ul>
+
+        <h2>Opening Hours</h2>
+        <p>
+            Monday – Friday: 6:00 AM – 9:00 PM <br>
+            Saturday – Sunday: 8:00 AM – 6:00 PM
+        </p>
+
+    </div>
+
+    <footer>
+        © 2025 Sweet Power Gym | All Rights Reserved
+    </footer>
+
+</body>
+</html>

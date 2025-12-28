@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CONTACT US</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 46px;
+            margin-top: 20px;
+            animation: fadeIn 2s;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-size: 18px;
+            animation: fadeIn 2.5s;
+        }
+
+        .menu {
+            background-color: #8b0000;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .menu a {
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .menu a:hover {
+            color: gold;
+            transform: scale(1.1);
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 28px;
+            text-align: center;
+            margin-top: 30px;
+            animation: fadeIn 1.5s;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        form input, form textarea {
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        form button {
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8b0000;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        form button:hover {
+            background-color: crimson;
+            transform: scale(1.05);
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #8b0000;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+            font-size: 16px;
+            transition: background-color 0.5s;
+        }
+
+        footer:hover {
+            background-color: #a00000;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @media screen and (max-width: 480px) {
+            .menu a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CONTACT US</h1>
+    <p class="subtitle">Get in Touch with Sweet Power Gym</p>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+
+        <h2>Send Us a Message</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Phone: +251-900-123-456</p>
+            <p>Email: sweetpowergym@gmail.com</p>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 Sweet Power Gym | All Rights Reserved
+    </footer>
+
+</body>
+</html>
+

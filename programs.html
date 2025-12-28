@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OUR PROGRAMS</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 46px;
+            margin-top: 20px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .menu {
+            background-color: #8b0000;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .menu a {
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .menu a:hover {
+            color: gold;
+            transform: scale(1.1);
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+
+        .content p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 1em;
+        }
+
+        /* Image row styling */
+        .image-row {
+            display: flex;
+            justify-content: space-between; /* spread them evenly */
+            margin-bottom: 20px;
+        }
+
+        .image-row img {
+            width: 32%;
+            border-radius: 10px;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .image-row img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: #8b0000;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .image-row img { width: 48%; }
+        }
+
+        @media screen and (max-width: 480px) {
+            .menu a { display: block; margin: 10px 0; }
+            .image-row img { width: 100%; margin-bottom: 10px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>OUR PROGRAMS</h1>
+    <p class="subtitle">Explore the Workouts We Offer</p>
+
+    <!-- Menu -->
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+
+        <h2>Weight Training</h2>
+        <div class="image-row">
+            <img src="image1.png" alt="Weight Training">
+            <img src="image6.png" alt="Weight Training">
+            <img src="image7.png" alt="Weight Training">
+        </div>
+        <p>
+            Build strength and muscle with our weight training program. 
+            Perfect for beginners and advanced athletes looking to improve performance.
+        </p>
+
+        <h2>Cardio Training</h2>
+        <div class="image-row">
+            <img src="image2.png" alt="Cardio Training">
+            <img src="image8.png" alt="Cardio Training">
+            <img src="image9.png" alt="Cardio Training">
+        </div>
+        <p>
+            Improve endurance, burn calories, and boost energy levels 
+            through high-intensity and fun cardio workouts.
+        </p>
+
+        <h2>CrossFit</h2>
+        <div class="image-row">
+            <img src="image10.png" alt="CrossFit">
+            <img src="image12.png" alt="CrossFit">
+            <img src="image11.png" alt="CrossFit">
+        </div>
+        <p>
+            A full-body, high-intensity program designed to increase strength, 
+            agility, and overall fitness through functional movements.
+        </p>
+
+        <h2>Yoga & Flexibility</h2>
+        <div class="image-row">
+            <img src="image13.png" alt="Yoga">
+            <img src="image15.png" alt="Yoga">
+            <img src="image14.png" alt="Yoga">
+        </div>
+        <p>
+            Enhance flexibility, reduce stress, and improve balance with 
+            calming and structured yoga sessions.
+        </p>
+
+    </div>
+
+    <footer>
+        © 2025 Sweet Power Gym | All Rights Reserved
+    </footer>
+
+</body>
+</html>
+
+
+
